@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+
+  "name": "Fill Input Fields",
+  "description": "This extension is going to help you fill input fields in the internet world.",
+  "version": "1.0",
+
+  "permissions": [
+    "storage"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentscript.js"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "icons": {
+    "48": "images/icon_48_3.png"
+  }
+  
+  // "icons": { "16": "icon16.png",
+  //          "48": "icon48.png",
+  //         "128": "icon128.png" },
+}
