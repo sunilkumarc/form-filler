@@ -6,23 +6,27 @@ var input_elem;
 
 
 window.document.addEventListener("click", function() {
-	if(document.body.lastChild == area) {
-		document.body.removeChild(area);	
+	var storage_elem = document.getElementById('keys');
+	if(storage_elem) {
+		document.body.removeChild(storage_elem);
 	}
 });
 
-function handleDoubleClick(items){
-
-	if(document.body.lastChild == area)
-		document.body.removeChild(area);
+function handleRightClick(items){
+	
+	var storage_elem = document.getElementById('keys');
+	if(storage_elem) {
+		document.body.removeChild(storage_elem);
+	}
 
 	area = document.createElement("div");
 	area.innerHTML = "";
+	area.id = 'keys';
 	table = document.createElement("table");
 	area.style.position = "absolute";
 	area.style.left = mouse_x + "px";
 	area.style.top = mouse_y + "px";
-	
+
 	for(key in items) {
 		tr = document.createElement("tr");
 		td = document.createElement("td");
@@ -60,22 +64,19 @@ function handleDoubleClick(items){
 		tr.appendChild(td2);
 		table.appendChild(tr);
 	}
-	
+
 	area.appendChild(table);
-	area.style.zIndex = "1000000";
 	document.body.appendChild(area);
 }
 
-
 for(i = 0; i < fields.length; ++i) {
 
-	
 	fields[i].oncontextmenu = function(event) {
-		
+
 		event.preventDefault();
 		mouse_x = event.clientX;
 		mouse_y = event.clientY;
 		input_elem = event.target;
-		chrome.storage.local.get(null, handleDoubleClick);
+		chrome.storage.local.get(null, handleRightClick);
 	}
 }
