@@ -4,7 +4,7 @@ You know how annoying it is to fill fields like username, passwords, email id et
 
 To try out this extension, follow the below steps :
  * Clone/download this repo.
- * Follow the steps [https://developer.chrome.com/extensions/getstarted#unpacked](here) to install the extension
+ * Follow the steps [here](https://developer.chrome.com/extensions/getstarted#unpacked) to install the extension
     into your browser.
  * After installing the extension, you can click on the small icon that appears as below next to the Omnibox in Chrome browser and
     add the information to the chrome local storage.
