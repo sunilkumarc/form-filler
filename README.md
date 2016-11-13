@@ -7,7 +7,7 @@ To try out this extension, follow the below steps :
  * After installing the extension, you can click on the small icon that appears as below next to the Omnibox in Chrome browser and
     add the key-value pairs to the chrome local storage.
 
-![](images/440_280.png "Instruction Image 1")
+![](images/440_280.jpg "Instruction Image 1")
 
  * You can access these details by right clicking on any input field on any web page on THE INTERNET!
 
