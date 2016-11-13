@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "Fill Input Fields",
-  "description": "This extension is going to help you fill input fields in the internet world.",
-  "version": "1.0",
+  "name": "Form Filler",
+  "description": "Form filler extension helps you to fill input fields on any web page.",
+  "version": "0.0.1",
 
   "permissions": [
     "storage"

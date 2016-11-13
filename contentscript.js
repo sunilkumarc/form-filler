@@ -13,7 +13,7 @@ window.document.addEventListener("click", function() {
 });
 
 function handleRightClick(items){
-	
+
 	var storage_elem = document.getElementById('keys');
 	if(storage_elem) {
 		document.body.removeChild(storage_elem);
