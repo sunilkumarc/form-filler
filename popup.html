@@ -5,20 +5,21 @@
 </head>
 <body>
 	<div id="about">
-		<div id="main-page" class="">
-			<div>Form Filler</div>	
-			<hr/>
-			<table id="key-values">
-				<thead>
-					<tr></tr>
-				</thead>
-			</table>
-			<a href="#" id="add-new">Add New</a>
+		<div id="main-page" class="page">
+			<div id="main-page-content">
+				<div id="ext-name">Form Filler</div>
+				<table id="key-values">
+					<thead>
+						<tr></tr>
+					</thead>
+				</table>
+				<button id="add-new-button">Add Item</button>
+			</div>
 		</div>
-		<div id="add-new-page" class="nodisplay">
+		<div id="add-new-page" class="page nodisplay">
 			<table id="add-new-table">
 				<tr>
-					<td>Key</td>
+					<td>Item</td>
 					<td><input id="add-new-key" type="text"/></td>
 				</tr>
 				<tr>
@@ -34,6 +35,7 @@
 	</div>
 	
 	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.js"></script>
 	<script src="js/myscript.js"></script>
 </body>
 </html>

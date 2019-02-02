@@ -7,9 +7,9 @@ function addRecordToTable(record) {
 }
 
 function getRecordString(key, val) {
-    var record = "<tr align=\"center\">";
+    var record = "<tr align=\"center\" class=\"item-row\">";
     record += "<td>" + key + "</td>";
-    record += "<td>" + val + "</td><";
+    record += "<td>" + val + "</td>";
     record += "</tr>";
     return record
 }
@@ -35,11 +35,14 @@ function transitionPage() {
 
     $("#main-page").slideUp();
     $("#add-new-page").slideDown();
+    // $("#main-page").toggle("slide", {direction: "left"}, 500);
+    // $("#add-new-page").toggle("slide", {direction: "right"}, 500);
 }
 
 function transitionBack() {
     $("#add-new-page").slideUp();
     $("#main-page").slideDown();
+    
 }
 
 function addNewKeyValue() {
@@ -52,12 +55,12 @@ function addNewKeyValue() {
         obj[key] = val;
         chrome.storage.local.set(obj, function(){});
         addRecordToTable(getRecordString(key, val));
-        transitionBack();
+        transitionPage();
     }
 }
 
 $(document).ready(function() {
-    $("#add-new").click(transitionPage);
+    $("#add-new-button").click(transitionPage);
     $("#back-button").click(transitionBack);
     $("#add-button").click(addNewKeyValue);
 });
