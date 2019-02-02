@@ -1,0 +1,29 @@
+body {
+    min-width: 20em;
+    margin: 1em;
+}
+
+#key-values {
+    width: 20em;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.nodisplay {
+    display: none;
+}
+
+#main-page {
+    display: inline-block;
+}
+
+#add-new-page {
+    float: left;
+}
+
+#add-new-table, tr, td{
+    border: 0px;
+}

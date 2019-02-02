@@ -1,13 +1,39 @@
 <!doctype html>
 <html>
 <head>
-	<script src="myscript.js"></script>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h3>Add a field</h3>
-	Key : <input type="text" id="key" ></input>
-	Value : <input type="text" id="val" /></input>
-	<input type="button" id="add" value="ADD" />
+	<div id="about">
+		<div id="main-page" class="">
+			<div>Form Filler</div>	
+			<hr/>
+			<table id="key-values">
+				<thead>
+					<tr></tr>
+				</thead>
+			</table>
+			<a href="#" id="add-new">Add New</a>
+		</div>
+		<div id="add-new-page" class="nodisplay">
+			<table id="add-new-table">
+				<tr>
+					<td>Key</td>
+					<td><input id="add-new-key" type="text"/></td>
+				</tr>
+				<tr>
+					<td>Value</td>
+					<td><input id="add-new-val" type="text"/></td>
+				</tr>
+				<tr>
+					<td><input id="add-button" type="button" value="Add"></td>
+					<td><input id="back-button" type="button" value="Back"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/myscript.js"></script>
 </body>
-
 </html>
